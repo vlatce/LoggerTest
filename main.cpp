@@ -19,7 +19,7 @@ int main(int argc, char** argv)
 {
 	logger<file_policy>::async_logger().start(log_level::kDebug, "TestLogger", "TestLogger.log");
 
-	int thread_count = 8;
+	int thread_count = 10;
 	int howmany = 1000000;
 
 	std::cout << funcTime([thread_count, howmany]() {
